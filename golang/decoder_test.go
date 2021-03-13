@@ -1,15 +1,15 @@
-package base62_test
+package golang_test
 
 import (
 	"testing"
 
-	base62 "github.com/cyrildever/base62"
+	base62 "github.com/cyrildever/base62/golang"
 	"gotest.tools/assert"
 )
 
 // TestDecode ...
 func TestDecode(t *testing.T) {
-	ref := 18969
+	ref := uint(18969)
 	value := "4VX"
 	found, err := base62.Decode(value)
 	if err != nil {

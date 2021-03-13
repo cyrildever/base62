@@ -1,9 +1,9 @@
-package base62_test
+package golang_test
 
 import (
 	"testing"
 
-	base62 "github.com/cyrildever/base62"
+	base62 "github.com/cyrildever/base62/golang"
 	"gotest.tools/assert"
 )
 

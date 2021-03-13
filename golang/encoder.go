@@ -1,4 +1,4 @@
-package base62
+package golang
 
 import (
 	utls "github.com/cyrildever/go-utls/common/utils"
