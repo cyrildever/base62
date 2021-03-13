@@ -63,7 +63,7 @@ console.assert(value === decoded)
 
 For Go:
 ```console
-go get github.com/cyrildever/base62/golang
+go get github.com/cyrildever/base62
 ```
 
 ```golang
