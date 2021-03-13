@@ -1,0 +1,31 @@
+{
+  "name": "base62-ts",
+  "version": "0.0.1",
+  "description": "Custom Base-62 Encoder in TypeScript",
+  "main": "dist/lib/src/typescript/index.js",
+  "types": "dist/lib/src/typescript/index.d.ts",
+  "scripts": {
+    "browserify": "browserify lib/src/typescript/index.ts --debug -p tsify -s base62 -o dist/base62-${npm_package_version}.js",
+    "minify": "terser dist/base62-${npm_package_version}.js -c -m -o dist/base62-${npm_package_version}.min.js",
+    "compile": "eslint lib --ext .ts && tsc",
+    "fix": "eslint lib --ext .ts --fix",
+    "test": "tsc && mocha 'test/src/typescript/node.spec.ts' --require ts-node/register && browserify ./dist/test/src/typescript/browser.spec.js -o dist/test/src/typescript/index.js && live-server --port=9001 --mount=/:test/src/typescript",
+    "fix-test": "eslint test --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyrildever/base62.git"
+  },
+  "keywords": [
+    "base62",
+    "base-62",
+    "encoder",
+    "decoder"
+  ],
+  "author": "Cyril Dever <cdever@edgewhere.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cyrildever/base62/issues"
+  },
+  "homepage": "https://github.com/cyrildever/base62#readme"
+}
