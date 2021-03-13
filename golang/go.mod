@@ -1,4 +1,4 @@
-module github.com/cyrildever/base62/golang
+module github.com/cyrildever/base62
 
 go 1.14
 

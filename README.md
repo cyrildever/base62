@@ -1,6 +1,13 @@
 # base62
 _Custom Base-62 Encoder_
 
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/cyrildever/base62)
+![GitHub last commit](https://img.shields.io/github/last-commit/cyrildever/base62)
+![GitHub issues](https://img.shields.io/github/issues/cyrildever/base62)
+![GitHub license](https://img.shields.io/github/license/cyrildever/base62)
+![npm](https://img.shields.io/npm/dw/bas62)
+![NPM](https://img.shields.io/npm/l/base62)
+
 This repository contains the version of my encoder/decoder for Base-62 in two languages:
 * [Golang](go/);
 * [TypeScript](ts/).
@@ -61,16 +68,16 @@ go get github.com/cyrildever/base62/golang
 ```
 
 ```golang
-import b62 "github.com/cyrildever/base62/golang/base62"
+import "github.com/cyrildever/base62"
 
 value := "4VX"
 
-decoded, err := b62.Decode(value)
+decoded, err := base62.Decode(value)
 
 // 18969
 fmt.Println(decoded)
 
-encoded, err := b62.Encode(decoded)
+encoded, err := base62.Encode(decoded)
 
 assert.Equal(t, value, encoded)
 ```

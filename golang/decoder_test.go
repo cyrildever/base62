@@ -3,7 +3,7 @@ package base62_test
 import (
 	"testing"
 
-	base62 "github.com/cyrildever/base62/golang"
+	base62 "github.com/cyrildever/base62"
 	"gotest.tools/assert"
 )
 
