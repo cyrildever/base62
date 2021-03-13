@@ -22,7 +22,25 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-export const CHARSET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+import { CHARSET } from '.'
 
-export * from './Decoder'
-export * from './Encoder'
+/**
+ * 
+ * @param value 
+ * @returns 
+ * @throws not a base-62 input
+ */
+export const decode = (value: string): number => {
+  let decoded = 0
+  /* eslint-disable no-loops/no-loops */
+  for (let i = 0; i < value.length; i++) {
+    const idx = value.length - i - 1
+    const n = CHARSET.indexOf(value[idx])
+    if (n === -1) {
+      throw new Error('not a base-62 input')
+    }
+    decoded += n * Math.pow(62, i)
+  }
+  /* eslint-enable no-loops/no-loops */
+  return decoded
+}
