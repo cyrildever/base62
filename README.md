@@ -44,7 +44,7 @@ In other words, they use the following base: `0123456789abcdefghijklmnopqrstuvwx
 
 For TypeScript:
 ```console
-npm i -base62-ts
+npm i base62-ts
 ```
 
 ```typescript
