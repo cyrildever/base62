@@ -57,20 +57,20 @@ console.assert(value === decoded)
 
 For Go:
 ```console
-go get github.com/cyrildever/base62/go
+go get github.com/cyrildever/base62/golang
 ```
 
 ```golang
-import base62 "github.com/cyrildever/base62/go"
+import b62 "github.com/cyrildever/base62/golang/base62"
 
 value := "4VX"
 
-decoded, err := base62.Decode(value)
+decoded, err := b62.Decode(value)
 
 // 18969
 fmt.Println(decoded)
 
-encoded, err := base62.Encode(decoded)
+encoded, err := b62.Encode(decoded)
 
 assert.Equal(t, value, encoded)
 ```

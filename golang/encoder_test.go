@@ -10,7 +10,7 @@ import (
 // TestEncode ....
 func TestEncode(t *testing.T) {
 	ref := "4VX"
-	value := 18969
+	value := uint(18969)
 	found, err := base62.Encode(value)
 	if err != nil {
 		t.Fatal(err)
