@@ -4,7 +4,6 @@ _Custom Base-62 Encoder_
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/cyrildever/base62)
 ![GitHub last commit](https://img.shields.io/github/last-commit/cyrildever/base62)
 ![GitHub issues](https://img.shields.io/github/issues/cyrildever/base62)
-![GitHub license](https://img.shields.io/github/license/cyrildever/base62)
 ![npm](https://img.shields.io/npm/dw/bas62)
 ![NPM](https://img.shields.io/npm/l/base62)
 
