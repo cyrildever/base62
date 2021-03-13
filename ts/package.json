@@ -1,6 +1,6 @@
 {
   "name": "base62-ts",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Custom Base-62 Encoder in TypeScript",
   "main": "dist/lib/src/typescript/index.js",
   "types": "dist/lib/src/typescript/index.d.ts",
@@ -10,6 +10,8 @@
     "compile": "eslint lib --ext .ts && tsc",
     "fix": "eslint lib --ext .ts --fix",
     "test": "tsc && mocha 'test/src/typescript/node.spec.ts' --require ts-node/register && browserify ./dist/test/src/typescript/browser.spec.js -o dist/test/src/typescript/index.js && live-server --port=9001 --mount=/:test/src/typescript",
+    "test-browser": "browserify ./dist/test/src/typescript/browser.spec.js -o dist/test/src/typescript/index.js && live-server --port=9001 --mount=/:test/src/typescript",
+    "test-node": "tsc && mocha 'test/src/typescript/node.spec.ts' --require ts-node/register",
     "fix-test": "eslint test --ext .ts --fix"
   },
   "repository": {
@@ -27,5 +29,25 @@
   "bugs": {
     "url": "https://github.com/cyrildever/base62/issues"
   },
-  "homepage": "https://github.com/cyrildever/base62#readme"
+  "homepage": "https://github.com/cyrildever/base62#readme",
+  "dependencies": {
+    "ts-utls": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^14.14.34",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "browserify": "^17.0.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.22.0",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "live-server": "^1.2.1",
+    "mocha": "^8.3.2",
+    "terser": "^5.6.0",
+    "ts-node": "^9.1.1",
+    "tsify": "^5.0.2",
+    "typescript": "~3.8.3"
+  }
 }

@@ -63,13 +63,6 @@
       "error",
       "never"
     ],
-    "camelcase": "off",
-    "@typescript-eslint/camelcase": [
-      "error",
-      {
-        "properties": "always"
-      }
-    ],
     "@typescript-eslint/consistent-type-assertions": [
       2,
       {
@@ -100,12 +93,6 @@
     "@typescript-eslint/indent": [
       "error",
       2
-    ],
-    "@typescript-eslint/interface-name-prefix": [
-      2,
-      {
-        "prefixWithI": "never"
-      }
     ],
     "@typescript-eslint/member-delimiter-style": [
       2,
