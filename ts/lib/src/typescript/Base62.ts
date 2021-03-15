@@ -22,8 +22,36 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-export const CHARSET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+import { decode } from '.'
 
-export * from './Base62'
-export * from './Decoder'
-export * from './Encoder'
+/**
+ * Base62 expects its string representation at instantiation
+ */
+export class Base62 {
+  str: string
+  val: number | undefined
+
+  constructor(str: string) {
+    try {
+      this.val = decode(str)
+      this.str = str
+    } catch (e) {
+      this.str = ''
+    }
+  }
+
+  toBuffer(): Buffer {
+    return Buffer.from(this.str, 'utf-8')
+  }
+
+  toString(): string {
+    return this.str
+  }
+
+  /**
+   * @returns the value associated with the base62 string representation if any, or `-1` if undefined
+   */
+  value(): number {
+    return this.val !== undefined ? this.val : -1
+  }
+}

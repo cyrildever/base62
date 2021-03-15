@@ -4,8 +4,25 @@ import 'mocha'
 
 const expect = chai.expect
 
-import { decode, encode } from '../../../lib/src/typescript'
+import { Base62, decode, encode } from '../../../lib/src/typescript'
 
+describe('Base62', () => {
+  it('should build the appropriate instance', () => {
+    const b62 = new Base62('4VX')
+    const expected = 18969
+    const found = b62.value()
+    found.should.equal(expected)
+    b62.toString().should.equal('4VX')
+    const bytes = Buffer.from([52, 86, 88])
+    b62.toBuffer().should.eqls(bytes)
+  })
+  it('should not accept a wrong string', () => {
+    const invalid = new Base62('not-a-base62-string')
+    invalid.value().should.equal(-1)
+    invalid.toString().should.equal('')
+    invalid.toBuffer().should.eqls(Buffer.alloc(0))
+  })
+})
 describe('Decoder', () => {
   describe('decode', () => {
     it('should recover the number appropriately', () => {
