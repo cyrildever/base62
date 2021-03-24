@@ -450,6 +450,8 @@ github.com/valyala/fasthttp v1.22.0/go.mod h1:0mw2RjXGOzxf4NL2jni3gUQ7LfjjUSiG5s
 github.com/valyala/tcplisten v0.0.0-20161114210144-ceec8f93295a/go.mod h1:v3UYOV9WzVtRmSR+PDvWpU/qWl4Wa5LApYYX4ZtKbio=
 github.com/vmihailenco/msgpack/v5 v5.2.3 h1:SVov6q8q6nZsV37a4i7D4AaDDii/xtvYLK2ZnLtuacY=
 github.com/vmihailenco/msgpack/v5 v5.2.3/go.mod h1:fEM7KuHcnm0GvDCztRpw9hV0PuoO2ciTismP6vjggcM=
+github.com/vmihailenco/msgpack/v5 v5.3.1 h1:0i85a4dsZh8mC//wmyyTEzidDLPQfQAxZIOLtafGbFY=
+github.com/vmihailenco/msgpack/v5 v5.3.1/go.mod h1:7xyJ9e+0+9SaZT0Wt1RGleJXzli6Q/V5KbhBonMG9jc=
 github.com/vmihailenco/tagparser/v2 v2.0.0 h1:y09buUbR+b5aycVFQs/g70pqKVZNBmxwAhO7/IwNM9g=
 github.com/vmihailenco/tagparser/v2 v2.0.0/go.mod h1:Wri+At7QHww0WTrCBeu4J6bNtoV6mEfg5OIWRZA9qds=
 github.com/willf/bitset v1.1.3/go.mod h1:RjeCKbqT1RxIR/KWY6phxZiaY1IyutSBfGjNPySAYV4=
@@ -596,6 +598,8 @@ golang.org/x/sys v0.0.0-20210315160823-c6e025ad8005 h1:pDMpM2zh2MT0kHy037cKlSby2
 golang.org/x/sys v0.0.0-20210315160823-c6e025ad8005/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20210317091845-390168757d9c h1:WGyvPg8lhdtSkb8BiYWdtPlLSommHOmJHFvzWODI7BQ=
 golang.org/x/sys v0.0.0-20210317091845-390168757d9c/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20210324051608-47abb6519492 h1:Paq34FxTluEPvVyayQqMPgHm+vTOrIifmcYxFBx9TLg=
+golang.org/x/sys v0.0.0-20210324051608-47abb6519492/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/term v0.0.0-20201117132131-f5c789dd3221/go.mod h1:Nr5EML6q2oocZ2LXRh80K7BxOlk5/8JxuGnuhpl+muw=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
