@@ -1,4 +1,4 @@
-# base62
+# base62-ts
 _Custom Base-62 Encoder_
 
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/cyrildever/base62)
@@ -57,6 +57,11 @@ const decoded = base62.decode(encoded)
 
 console.assert(value === decoded)
 ```
+
+
+### Dependencies
+
+base62-ts depends on my general utility library for computing euclidean division: [ts-utls](https://www.npmjs.com/package/ts-utls).
 
 
 ### License
