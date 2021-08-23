@@ -63,7 +63,7 @@ console.assert(value === decoded)
 
 base62-ts depends on my general utility library for computing euclidean division: [ts-utls](https://www.npmjs.com/package/ts-utls).
 
-Besides, to run the tests, you would need to install [`live-server`|(https://www.npmjs.com/package/live-server):
+Besides, to run the tests, you would need to install [`live-server`](https://www.npmjs.com/package/live-server):
 ```console
 npm i -g live-server
 ```
