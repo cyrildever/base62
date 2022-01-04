@@ -88,4 +88,4 @@ Both versions are available under an MIT license (see [LICENSE](LICENSE)).
 
 
 <hr />
-&copy; 2021 Cyril Dever. All rights reserved
+&copy; 2021-2022 Cyril Dever. All rights reserved
