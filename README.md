@@ -84,7 +84,7 @@ assert.Equal(t, value, encoded)
 
 ### License
 
-Both versions are available under an MIT license (see [LICENSE](LICENSE)).
+Both versions are available under a MIT license (see [LICENSE](LICENSE)).
 
 
 <hr />
