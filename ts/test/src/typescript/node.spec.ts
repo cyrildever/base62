@@ -26,9 +26,14 @@ describe('Base62', () => {
 describe('Decoder', () => {
   describe('decode', () => {
     it('should recover the number appropriately', () => {
-      const value = '4VX'
-      const expected = 18969
-      const found = decode(value)
+      let value = '4VX'
+      let expected = 18969
+      let found = decode(value)
+      found.should.equal(expected)
+
+      value = '0'
+      expected = 0
+      found = decode(value)
       found.should.equal(expected)
     })
     it('should throw an error if the passed input is not a base-62 string', () => {
@@ -39,10 +44,14 @@ describe('Decoder', () => {
 describe('Encoder', () => {
   describe('encode', () => {
     it('should transform an integer appropriately', () => {
-      const value = 18969
-      const expected = '4VX'
-      const found = encode(value)
+      let value = 18969
+      let expected = '4VX'
+      let found = encode(value)
       found.should.equal(expected)
+
+      value = 0
+      expected = '0'
+      found = encode(0)
     })
     it('should throw an error if the passed number is not an integer', () => {
       expect(() => encode(24.75009)).to.throw(Error, 'not an integer')

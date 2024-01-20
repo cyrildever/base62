@@ -18,6 +18,8 @@ The latter could be downloaded from its NPM repo: [https://www.npmjs.com/package
 
 I needed an efficient way to apply a Base-62 encoding/decoding algorithm working the same way in TypeScript/Javascript and in Golang environments.
 
+_**WARNING**: Decoding any wrongful string returns an error and `0`. You shouldn't use the latter._
+
 
 ### Usage
 
@@ -88,4 +90,4 @@ Both versions are available under a MIT license (see [LICENSE](LICENSE)).
 
 
 <hr />
-&copy; 2021-2023 Cyril Dever. All rights reserved
+&copy; 2021-2024 Cyril Dever. All rights reserved

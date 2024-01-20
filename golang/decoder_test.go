@@ -17,6 +17,10 @@ func TestDecode(t *testing.T) {
 	}
 	assert.Equal(t, found, ref)
 
-	_, err = base62.Decode("not-a-base-62%")
+	found, err = base62.Decode("not-a-base-62%")
 	assert.Error(t, err, "not a base-62 input")
+	assert.Equal(t, found, uint(0))
+
+	found, _ = base62.Decode("0")
+	assert.Equal(t, found, uint(0))
 }

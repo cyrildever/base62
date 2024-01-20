@@ -12,6 +12,7 @@ func Decode(value string) (decoded uint, err error) {
 		idx := len(value) - i - 1
 		n := strings.Index(string(CHARSET), value[idx:idx+1])
 		if n == -1 {
+			decoded = 0
 			err = errors.New("not a base-62 input")
 			return
 		}

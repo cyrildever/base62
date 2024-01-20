@@ -16,4 +16,14 @@ func TestEncode(t *testing.T) {
 		t.Fatal(err)
 	}
 	assert.Equal(t, found, ref)
+
+	found, err = base62.Encode(uint(0))
+	assert.NilError(t, err)
+	assert.Equal(t, found, "0")
+
+	found, _ = base62.Encode(uint(238_328))
+	assert.Equal(t, found, "1000")
+
+	found, _ = base62.Encode(uint(14_776_335))
+	assert.Equal(t, found, "ZZZZ")
 }
