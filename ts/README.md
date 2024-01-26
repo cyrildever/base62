@@ -68,6 +68,8 @@ Besides, to run the tests, you would need to install [`live-server`](https://www
 npm i -g live-server
 ```
 
+_NB: Tests run on port `10001`, beware if another process runs on the same port as such a conflict may disable them._
+
 
 ### License
 
