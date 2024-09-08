@@ -35,7 +35,7 @@ export class Base62 {
     try {
       this.val = decode(str)
       this.str = str
-    } catch (e) {
+    } catch (_) { // eslint-disable-line @typescript-eslint/no-unused-vars
       this.str = ''
     }
   }
