@@ -4,7 +4,7 @@ _Custom Base-62 Encoder_
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/cyrildever/base62)
 ![GitHub last commit](https://img.shields.io/github/last-commit/cyrildever/base62)
 ![GitHub issues](https://img.shields.io/github/issues/cyrildever/base62)
-![npm](https://img.shields.io/npm/dw/bas62)
+![npm](https://img.shields.io/npm/dw/base62)
 ![NPM](https://img.shields.io/npm/l/base62)
 
 This repository contains the version of my encoder/decoder for Base-62 in three languages:
