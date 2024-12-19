@@ -1,25 +1,21 @@
-# base62
+# base62-ts
 _Custom Base-62 Encoder_
 
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/cyrildever/base62)
 ![GitHub last commit](https://img.shields.io/github/last-commit/cyrildever/base62)
 ![GitHub issues](https://img.shields.io/github/issues/cyrildever/base62)
-![npm](https://img.shields.io/npm/dw/bas62)
-![NPM](https://img.shields.io/npm/l/base62)
+![npm](https://img.shields.io/npm/dw/base62-ts)
+![NPM](https://img.shields.io/npm/l/base62-ts)
 
 This repository contains the version of my encoder/decoder for Base-62 in three languages:
-* [Golang](go/);
-* [Python](py/);
-* [TypeScript](ts/).
-
-The latter could be downloaded from its NPM repo: [https://www.npmjs.com/package/base62-ts](https://www.npmjs.com/package/base62-ts).
+* [Golang](https://github.com/cyrildever/base62);
+* Python;
+* [TypeScript](https://github.com/cyrildever/base62/ts).
 
 
 ### Motivation
 
-I needed an efficient way to apply a Base-62 encoding/decoding algorithm working the same way in TypeScript/Javascript, Python and Golang environments.
-
-_**WARNING**: Decoding any wrongful string returns an error and `0`. You shouldn't use the latter._
+I needed an efficient way to apply a Base-62 encoding/decoding algorithm working the same way in TypeScript/Javascript, Golang and Python environments.
 
 
 ### Usage
@@ -44,47 +40,6 @@ Both versions use the same following dictionary:
 
 In other words, they use the following base: `0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`.
 
-For TypeScript:
-```console
-npm i base62-ts
-```
-
-```typescript
-import * as base62 from 'base62-ts'
-
-const value = 18969
-
-const encoded = base62.encode(value)
-
-// 4VX
-console.log(encoded)
-
-const decoded = base62.decode(encoded)
-
-console.assert(value === decoded)
-```
-
-For Go:
-```console
-go get github.com/cyrildever/base62
-```
-
-```golang
-import "github.com/cyrildever/base62"
-
-value := "4VX"
-
-decoded, err := base62.Decode(value)
-
-// 18969
-fmt.Println(decoded)
-
-encoded, err := base62.Encode(decoded)
-
-assert.Equal(t, value, encoded)
-```
-
-For Python:
 ```console
 pip install base62-py
 ```
@@ -105,9 +60,16 @@ assert value == decoded
 ```
 
 
+### Tests
+
+```console
+$ pip install -e . && python3 -m unittest discover
+```
+
+
 ### License
 
-All versions are available under a MIT license (see [LICENSE](LICENSE)).
+Both versions are available under a MIT license (see [LICENSE](LICENSE)).
 
 
 <hr />

@@ -14,7 +14,7 @@ This repository contains the version of my encoder/decoder for Base-62 in two la
 
 ### Motivation
 
-I needed an efficient way to apply a Base-62 encoding/decoding algorithm working the same way in TypeScript/Javascript and in Golang environments.
+I needed an efficient way to apply a Base-62 encoding/decoding algorithm working the same way in TypeScript/Javascript, Python and Golang environments.
 
 
 ### Usage
