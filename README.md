@@ -111,4 +111,4 @@ All versions are available under a MIT license (see [LICENSE](LICENSE)).
 
 
 <hr />
-&copy; 2021-2024 Cyril Dever. All rights reserved.
+&copy; 2021-2025 Cyril Dever. All rights reserved.

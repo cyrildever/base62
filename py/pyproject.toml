@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "base62-py"
-version = "1.3.13"
+version = "1.3.14"
 description = "Custom Base-62 Encoder in Python"
 readme = "README.md"
 authors = [{ name = "Cyril Dever", email = "cdever@pep-s.com" }]
