@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from base62 import decode, encode
+from base62 import decode, encode, is_valid_base62
 
 
 class TestEncoder(TestCase):
@@ -24,3 +24,14 @@ class TestEncoder(TestCase):
 
         found = encode(0)
         self.assertEqual(found, "0")
+
+
+class TestIsValid(TestCase):
+    def test_is_valid_base62(self):
+        value = "4VX"
+        is_valid = is_valid_base62(value)
+        self.assertTrue(is_valid)
+
+        value = "not-a-base-62%"
+        is_valid = is_valid_base62(value)
+        self.assertFalse(is_valid)

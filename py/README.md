@@ -1,4 +1,4 @@
-# base62-ts
+# base62-py
 _Custom Base-62 Encoder_
 
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/cyrildever/base62)
@@ -44,7 +44,7 @@ pip install base62-py
 ```
 
 ```python
-from base62 import decode, encode
+from base62 import decode, encode, is_valid_base62
 
 value = 18969
 
@@ -56,6 +56,8 @@ print(encoded)
 decoded = decode(encoded)
 
 assert value == decoded
+
+assert is_valid_base62(encoded)
 ```
 
 
@@ -72,4 +74,4 @@ Both versions are available under a MIT license (see [LICENSE](LICENSE)).
 
 
 <hr />
-&copy; 2021-2025 Cyril Dever. All rights reserved.
+&copy; 2021-2026 Cyril Dever. All rights reserved.
