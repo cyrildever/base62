@@ -56,6 +56,8 @@ console.log(encoded)
 const decoded = base62.decode(encoded)
 
 console.assert(value === decoded)
+
+console.assert(base62.isValid("4VX"))
 ```
 
 

@@ -76,4 +76,9 @@ func ToBase62(value int) Base62 {
 	return Base62(enc)
 }
 
+// IsValid ...
+func IsValid(input string) bool {
+	return b62.IsValidBase62(input)
+}
+
 const ERROR Base62 = Base62("%") // TODO Make more robust

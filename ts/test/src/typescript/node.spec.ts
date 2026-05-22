@@ -4,7 +4,7 @@ import 'mocha'
 
 const expect = chai.expect
 
-import { Base62, decode, encode } from '../../../lib/src/typescript'
+import { Base62, decode, encode, isValid } from '../../../lib/src/typescript'
 
 describe('Base62', () => {
   it('should build the appropriate instance', () => {
@@ -21,6 +21,14 @@ describe('Base62', () => {
     invalid.value().should.equal(-1)
     invalid.toString().should.equal('')
     invalid.toBuffer().should.eqls(Buffer.alloc(0))
+
+    let testIsValid = Base62.isValid('4VX')
+    testIsValid.should.equal(true)
+
+    isValid('4VX').should.equal(true)
+
+    testIsValid = Base62.isValid('not-a-base-62%')
+    testIsValid.should.equal(false)
   })
 })
 describe('Decoder', () => {

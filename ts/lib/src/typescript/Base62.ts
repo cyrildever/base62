@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-import { decode } from '.'
+import { CHARSET, decode } from '.'
 
 /**
  * Base62 expects its string representation at instantiation
@@ -49,9 +49,20 @@ export class Base62 {
   }
 
   /**
+   * @param input The string to test
+   * @returns true if it's possibly a base62-encoded string
+   */
+  static isValid(input: string): boolean {
+    return input.length > 0 && [...input].every(c => CHARSET.includes(c))
+  }
+
+  /**
    * @returns the value associated with the base62 string representation if any, or `-1` if undefined
    */
   value(): number {
     return this.val !== undefined ? this.val : -1
   }
 }
+
+export const isValid = (input: string): boolean =>
+  Base62.isValid(input)

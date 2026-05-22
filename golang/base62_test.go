@@ -29,4 +29,8 @@ func TestBase62(t *testing.T) {
 	assert.Equal(t, wrong.String(), "")
 	assert.Assert(t, wrong.IsEmpty())
 	assert.Assert(t, wrong.Bytes() == nil)
+
+	assert.Assert(t, model.IsValid(ref))
+	notABase62 := "not-a-base-62%"
+	assert.Assert(t, model.IsValid(notABase62) == false)
 }

@@ -62,6 +62,8 @@ console.log(encoded)
 const decoded = base62.decode(encoded)
 
 console.assert(value === decoded)
+
+console.assert(base62.isValid("4VX"))
 ```
 
 For Go:
@@ -82,6 +84,8 @@ fmt.Println(decoded)
 encoded, err := base62.Encode(decoded)
 
 assert.Equal(t, value, encoded)
+
+assert.Assert(t, base62.IsValid("4VX"))
 ```
 
 For Python:
@@ -90,7 +94,7 @@ pip install base62-py
 ```
 
 ```python
-from base62 import decode, encode
+from base62 import decode, encode, is_valid_base62
 
 value = 18969
 
@@ -102,6 +106,8 @@ print(encoded)
 decoded = decode(encoded)
 
 assert value == decoded
+
+assert is_valid_base62(encoded)
 ```
 
 
