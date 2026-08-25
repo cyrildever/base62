@@ -1,10 +1,6 @@
-import * as chai from 'chai'
-chai.should()
-import 'mocha'
-
-const expect = chai.expect
-
 import { Base62, decode, encode, isValid } from '../../../lib/src/typescript'
+import { expect } from 'chai'
+import 'chai/register-should'
 
 describe('Base62', () => {
   it('should build the appropriate instance', () => {

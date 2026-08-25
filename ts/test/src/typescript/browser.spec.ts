@@ -1,12 +1,11 @@
 import { Base62, decode, encode, isValid } from '../../../lib/src/typescript'
-import { expect, should } from 'chai'
+import { expect } from 'chai'
+import 'chai/register-should'
 
 if (typeof window !== 'undefined') {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-require-imports
   window.Buffer = require('buffer/').Buffer
 }
-
-should()
 
 describe('Base62', () => {
   it('should build the appropriate instance', () => {
