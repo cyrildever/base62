@@ -1,6 +1,6 @@
 {
   "name": "base62-ts",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Custom Base-62 Encoder in TypeScript",
   "main": "dist/lib/src/typescript/index.js",
   "types": "dist/lib/src/typescript/index.d.ts",
@@ -31,22 +31,22 @@
   },
   "homepage": "https://github.com/cyrildever/base62#readme",
   "dependencies": {
-    "ts-utls": "^1.6.1"
+    "ts-utls": "^1.6.2"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.6",
-    "@eslint/js": "^9.39.4",
+    "@eslint/eslintrc": "^3.3.7",
+    "@eslint/js": "^9.39.5",
     "@types/chai": "^5.2.3",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^26.3.0",
-    "@typescript-eslint/eslint-plugin": "^8.68.0",
-    "@typescript-eslint/parser": "^8.68.0",
+    "@types/node": "^26.5.1",
+    "@typescript-eslint/eslint-plugin": "^8.70.0",
+    "@typescript-eslint/parser": "^8.70.0",
     "buffer": "^6.0.3",
     "chai": "^6.2.2",
     "esbuild": "^0.28.2",
-    "eslint": "^9.39.4",
+    "eslint": "^9.39.5",
     "eslint-plugin-no-loops": "^0.4.0",
-    "globals": "^17.11.0",
+    "globals": "^17.12.0",
     "mocha": "^11.8.0",
     "typescript": "^6.0.3"
   }

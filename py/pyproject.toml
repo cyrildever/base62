@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "base62-py"
-version = "1.4.0"
+version = "1.4.1"
 description = "Custom Base-62 Encoder in Python"
 readme = "README.md"
 authors = [{ name = "Cyril Dever", email = "cdever@pep-s.com" }]
@@ -23,7 +23,7 @@ keywords = [
     "decoder"
 ]
 dependencies = [
-    "py-utls>=0.3.1"
+    "py-utls>=0.3.2"
 ]
 requires-python = ">=3.10.2"
 
